@@ -13,27 +13,16 @@ export default function About({ authors, settings }) {
         <p className="text-lg">We are a small passionate team.</p>
       </div>
 
-      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
-        {authors.slice(0, 3).map(author => {
-          const imageProps = urlForImage(author?.image) || null;
-          return (
-            <div
-              key={author._id}
-              className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-              <Link href={`/author/${author?.slug}`}>
-                {imageProps && (
-                  <Image
-                    src={imageProps?.src}
-                    alt={author?.name || " "}
-                    fill
-                    sizes="(max-width: 320px) 100vw, 320px"
-                    className="object-cover"
-                  />
-                )}
-              </Link>
-            </div>
-          );
-        })}
+      <div className="mb-16 mt-6 flex justify-center md:mb-32 md:mt-16">
+        <div className="relative aspect-square w-full max-w-[320px] overflow-hidden rounded-md bg-slate-50">
+          <Image
+            src="/img/about.jpg"
+            alt="Focus.ai"
+            fill
+            sizes="(max-width: 320px) 100vw, 320px"
+            className="object-cover object-center"
+          />
+        </div>
       </div>
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">

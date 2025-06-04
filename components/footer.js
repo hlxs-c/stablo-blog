@@ -23,7 +23,7 @@ export default function Footer(props) {
             href="https://web3templates.com/?ref=stablo-template"
             rel="noopener"
             target="_blank">
-            Web3Templates
+            Focus.ai
           </a>
         </span>
         <span>&middot;</span>
@@ -38,7 +38,8 @@ export default function Footer(props) {
         </span>
       </div>
       <div className="mt-2 flex items-center justify-between">
-        <div className="mt-5">
+        {/* logo image */}
+        {/* <div className="mt-5">
           <a
             href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
             target="_blank"
@@ -52,7 +53,7 @@ export default function Footer(props) {
               height="25"
             />
           </a>
-        </div>
+        </div> */}
         <ThemeSwitch />
       </div>
       <Backlink />

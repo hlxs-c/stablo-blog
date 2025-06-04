@@ -28,21 +28,25 @@ export default function Navbar(props) {
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      // label: "Archive",
+      label: "Products",
+      href: "/"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
+      label: "ADHD Test",
+      // href: "https://stablo-pro.web3templates.com/",
+      // external: true,
+      // badge: "new"
+      href: "https://adhdready.com/",
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
+      label: "Login",
+      href: "/",
+      // href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      // external: true
     }
   ];
+  // const rightmenu = [];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
 
@@ -86,8 +90,9 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Focus.ai
                       </span>
+                      
                     )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
